@@ -36,7 +36,8 @@ function calc(operation, a, b) {
         b = null;
         result = null;
         screen.innerHTML = null;
-      } else if (a === null) {
+      } 
+      if (a === null) {
         screen.innerHTML === "0" ? screen.innerHTML = button.innerHTML : screen.innerHTML += button.innerHTML;
       } else if (b === null) {
         b = screen.innerHTML = button.innerHTML;
