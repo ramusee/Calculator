@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         screen.innerHTML === "0" ? screen.innerHTML = button.innerHTML : screen.innerHTML += button.innerHTML;
         b = screen.innerHTML;
       }
-      if (screen.innerHTML.length >= 5) {
+      if (screen.innerHTML.length >= 6) {
       screen.innerHTML = screen.innerHTML.slice(0, 6);
       }
     }
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
           screen.innerHTML = calc(operation, a, b);
           a = screen.innerHTML;
           b = null;
-          if (screen.innerHTML.length > 5) {
+          if (screen.innerHTML.length > 6) {
             screen.innerHTML = (+screen.innerHTML).toExponential(1);
           }
         }
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         a = result;
 
-        if (screen.innerHTML.length > 5) {
+        if (screen.innerHTML.length > 6) {
           screen.innerHTML = (+screen.innerHTML).toExponential(1);
         }
       }
