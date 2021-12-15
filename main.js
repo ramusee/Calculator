@@ -1,4 +1,5 @@
-function calc(operation, a, b) {
+document.addEventListener("DOMContentLoaded", function() {
+  function calc(operation, a, b) {
   if (operation === undefined || a === undefined || b === undefined) return "Error";
   
       const operations = {
@@ -119,3 +120,4 @@ function calc(operation, a, b) {
         operation = null;
       }
   }
+})
