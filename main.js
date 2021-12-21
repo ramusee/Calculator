@@ -1,3 +1,6 @@
+import {screen} from './view.js';
+import {buttons} from './view.js';
+
 document.addEventListener("DOMContentLoaded", function() {
   function calc(operation, a, b) {
   if (operation === undefined || a === undefined || b === undefined) return "Error";
@@ -12,16 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
       if (!(operation in operations)) return "unknown operation";
       const result = operations[operation]();
       return isFinite(result) ? result : "Error";
-  }
-  
-  
-  const screen = document.querySelector(".screen");
-  const buttons = {
-    btnsNum: document.querySelectorAll(".button_num"),
-    btnsOperation: document.querySelectorAll(".button_operation"),
-    btnEqual: document.querySelector(".button_equal"),
-    btnBackspace: document.querySelector(".button_backspace"),
-    btnC: document.querySelector(".button_C")
   }
   
   let a = null;

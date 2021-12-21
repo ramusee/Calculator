@@ -44,6 +44,9 @@ body {
 .button:active {
   opacity: 0.5;
 }
+.button:focus {
+  outline: none;
+}
 .button_backspace {
 	font-size: 25px;
 }
