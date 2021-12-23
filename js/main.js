@@ -1,5 +1,4 @@
-import {screen} from './view.js';
-import {buttons} from './view.js';
+import {screen, buttons} from './view.js';
 
 document.addEventListener("DOMContentLoaded", function() {
   function calc(operation, a, b) {
