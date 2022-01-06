@@ -1,6 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
 import {screen, buttons} from './view.js';
 
-document.addEventListener("DOMContentLoaded", function() {
   function calc(operation, a, b) {
   if (operation === undefined || a === undefined || b === undefined) return "Error";
   
